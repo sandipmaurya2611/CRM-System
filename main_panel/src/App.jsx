@@ -1,10 +1,11 @@
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Sidebar from './components/common/SideBar';
 import SuperAdminDashboard from './pages/Dashboard/mainDashboard';
 import MainSubscription from './pages/Subscription/mainSubscription';
 import Payment from './pages/Payment/Payment';
-
+import CustomerDetails from './pages/Customer/CustomerDetails';
+import AddCustomer from './pages/Customer/AddCustomer';
+import Customers from './pages/Customer/Customers';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Route path="/" element={<SuperAdminDashboard />} />
           <Route path="/subscription" element={<MainSubscription />} />
           <Route path="/payments" element={<Payment />} />
+          <Route path="/customers" element={<Customers />} />
+          <Route path="/customers/:id" element={<CustomerDetails />} />
+          <Route path="/add-customer" element={<AddCustomer />} />
         </Routes>
       </main>
     </div>
