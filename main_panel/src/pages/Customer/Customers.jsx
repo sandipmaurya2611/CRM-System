@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import Pagination from "../../components/common/Pagination";
-import FilterSearchBar from "../../components/common/FilterSearchBar";
+import Pagination from "../../components/common/Pagination"
+import FilterSearchBar from "../../components/common/FilterSearchBar"
 
-const Customers = () => {
+const Customers= () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
