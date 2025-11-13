@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Sidebar from './components/common/SideBar'
+import SuperAdminDashboard from './pages/Dashboard/mainDashboard'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Sidebar/>
+     <SuperAdminDashboard/>
     </>
   )
 }
