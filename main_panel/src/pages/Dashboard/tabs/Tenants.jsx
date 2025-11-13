@@ -37,19 +37,18 @@ export default function TenantsTab() {
           </button>
         </div>
       </div>
-<div className="flex-1 min-h-0"> 
       <Table
         keyField="id"
+        maxHeight="420px" // <--- fixed size of the scroll area; only rows will scroll
         columns={[
-          { key: "name", label: "Company" },
-          { key: "admin", label: "Admin" },
-          { key: "plan", label: "Plan" },
-          { key: "status", label: "Status" },
-          { key: "users", label: "Users" },
-
-          { key: "dbSizeGb", label: "DB Size" },
-          { key: "mrr", label: "MRR" },
-          { key: "createdOn", label: "Created" },
+          { key: "name", label: "Company", width: "22%" },
+          { key: "admin", label: "Admin", width: "18%" },
+          { key: "plan", label: "Plan", width: "10%" },
+          { key: "status", label: "Status", width: "10%" },
+          { key: "users", label: "Users", width: "8%" },
+          { key: "dbSizeGb", label: "DB Size", width: "10%" },
+          { key: "mrr", label: "MRR", width: "12%" },
+          { key: "createdOn", label: "Created", width: "10%" },
         ]}
         data={filtered}
         renderCell={(c, row) => {
@@ -71,7 +70,7 @@ export default function TenantsTab() {
           }
         }}
       />
-      </div>
+
     </div>
   );
 }
