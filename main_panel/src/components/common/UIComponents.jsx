@@ -43,27 +43,36 @@ export function KPI({ icon: Icon, label, value, note, trend = 0 }) {
 
 export function Table({ columns, data, renderCell, keyField }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
-      <table className="w-full table-fixed border-collapse text-left">
-        <thead className="bg-slate-50 text-sm text-slate-600">
-          <tr>
-            {columns.map((c) => (
-              <th key={c.key} className="px-4 py-3 font-medium">{c.label}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-slate-100 text-sm">
-          {data.map((row, idx) => (
-            <tr key={`${row[keyField]}-${idx}`} className="hover:bg-slate-50/50">
+    <div className="rounded-2xl border border-slate-200 bg-white relative">
+      {/* Header sticks, rows scroll */}
+      <div className="sticky top-0 z-10 bg-white">
+        <table className="w-full table-fixed border-collapse text-left">
+          <thead className="bg-slate-50 text-sm text-slate-600">
+            <tr>
               {columns.map((c) => (
-                <td key={c.key} className="px-4 py-3 align-top">
-                  {renderCell ? renderCell(c, row) : row[c.key]}
-                </td>
+                <th key={c.key} className="px-4 py-3 font-medium">{c.label}</th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+        </table>
+      </div>
+
+      {/* Scrollable body */}
+      <div className="overflow-y-auto" style={{ maxHeight: "inherit" }}>
+        <table className="w-full table-fixed border-collapse text-left">
+          <tbody className="divide-y divide-slate-100 text-sm">
+            {data.map((row, idx) => (
+              <tr key={`${row[keyField]}-${idx}`} className="hover:bg-slate-50/50">
+                {columns.map((c) => (
+                  <td key={c.key} className="px-4 py-3 align-top">
+                    {renderCell ? renderCell(c, row) : row[c.key]}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
