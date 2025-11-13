@@ -1,0 +1,355 @@
+// ========== KPI DATA ==========
+export const kpiData = {
+  orgs: 128,
+  users: 4821,
+  mrr: 186450,
+  properties: 98234,
+  activeSessions: 356,
+};
+
+// ========== REVENUE TREND DATA ==========
+export const revenueTrend = [
+  { month: "Jan", mrr: 122000, arr: 1464000 },
+  { month: "Feb", mrr: 129500, arr: 1554000 },
+  { month: "Mar", mrr: 138200, arr: 1658400 },
+  { month: "Apr", mrr: 149000, arr: 1788000 },
+  { month: "May", mrr: 157300, arr: 1887600 },
+  { month: "Jun", mrr: 162800, arr: 1953600 },
+  { month: "Jul", mrr: 171100, arr: 2053200 },
+  { month: "Aug", mrr: 176900, arr: 2122800 },
+  { month: "Sep", mrr: 181400, arr: 2176800 },
+  { month: "Oct", mrr: 184300, arr: 2211600 },
+  { month: "Nov", mrr: 186450, arr: 2237400 },
+];
+
+// ========== USAGE TREND DATA ==========
+export const usageTrend = [
+  { day: "Mon", api: 128000, jobs: 980, logins: 820 },
+  { day: "Tue", api: 156200, jobs: 1100, logins: 910 },
+  { day: "Wed", api: 149500, jobs: 1040, logins: 870 },
+  { day: "Thu", api: 172400, jobs: 1200, logins: 940 },
+  { day: "Fri", api: 165000, jobs: 1140, logins: 910 },
+  { day: "Sat", api: 98000, jobs: 620, logins: 520 },
+  { day: "Sun", api: 76500, jobs: 420, logins: 410 },
+];
+
+// ========== PLAN MIX DATA ==========
+export const planMix = [
+  { name: "Free", value: 12 },
+  { name: "Basic", value: 33 },
+  { name: "Pro", value: 55 },
+];
+
+// ========== TENANTS DATA ==========
+export const tenants = [
+  {
+    id: "t-001",
+    name: "Skyline Realty Pvt Ltd",
+    admin: "Isha Verma",
+    plan: "Pro",
+    status: "Active",
+    users: 112,
+    properties: 3250,
+    createdOn: "2024-02-18",
+    lastActive: "2025-11-12 18:42",
+    dbSizeGb: 42.3,
+    mrr: 4600,
+  },
+  {
+    id: "t-002",
+    name: "GreenLeaf Estates",
+    admin: "Omar Khan",
+    plan: "Basic",
+    status: "Active",
+    users: 37,
+    properties: 980,
+    createdOn: "2023-09-01",
+    lastActive: "2025-11-13 09:05",
+    dbSizeGb: 11.1,
+    mrr: 1199,
+  },
+  {
+    id: "t-003",
+    name: "BlueRoof Holdings",
+    admin: "Maya Patel",
+    plan: "Pro",
+    status: "Suspended",
+    users: 58,
+    properties: 1200,
+    createdOn: "2024-06-10",
+    lastActive: "2025-10-28 12:10",
+    dbSizeGb: 19.9,
+    mrr: 2900,
+  },
+  {
+    id: "t-004",
+    name: "UrbanNest Realty",
+    admin: "Rohit Sharma",
+    plan: "Pro",
+    status: "Active",
+    users: 203,
+    properties: 7320,
+    createdOn: "2023-12-04",
+    lastActive: "2025-11-13 11:22",
+    dbSizeGb: 88.5,
+    mrr: 9100,
+  },
+  {
+    id: "t-005",
+    name: "Harbor & Hills LLP",
+    admin: "Sophia Rao",
+    plan: "Basic",
+    status: "Active",
+    users: 21,
+    properties: 460,
+    createdOn: "2022-08-19",
+    lastActive: "2025-11-12 21:10",
+    dbSizeGb: 6.7,
+    mrr: 799,
+  },
+
+  // --- Additional tenants ---
+  {
+    id: "t-006",
+    name: "CrestPoint Realty Group",
+    admin: "Aaron Mitchell",
+    plan: "Pro",
+    status: "Active",
+    users: 186,
+    properties: 6120,
+    createdOn: "2023-03-14",
+    lastActive: "2025-11-13 10:48",
+    dbSizeGb: 73.2,
+    mrr: 8300,
+  },
+  {
+    id: "t-007",
+    name: "SilverOak Properties",
+    admin: "Lena D’Souza",
+    plan: "Basic",
+    status: "Trial",
+    users: 15,
+    properties: 290,
+    createdOn: "2025-01-22",
+    lastActive: "2025-11-13 08:20",
+    dbSizeGb: 2.9,
+    mrr: 0,
+  },
+  {
+    id: "t-008",
+    name: "Evergreen Habitat Co.",
+    admin: "Daniel Wu",
+    plan: "Pro",
+    status: "Active",
+    users: 94,
+    properties: 2450,
+    createdOn: "2023-10-30",
+    lastActive: "2025-11-12 19:55",
+    dbSizeGb: 34.8,
+    mrr: 5100,
+  },
+  {
+    id: "t-009",
+    name: "PrimeStone Realty",
+    admin: "Nisha Thakur",
+    plan: "Enterprise",
+    status: "Active",
+    users: 512,
+    properties: 15020,
+    createdOn: "2022-11-13",
+    lastActive: "2025-11-13 12:40",
+    dbSizeGb: 210.4,
+    mrr: 18200,
+  },
+  {
+    id: "t-010",
+    name: "Suncrest Property Mgmt",
+    admin: "Ethan Cole",
+    plan: "Pro",
+    status: "Inactive",
+    users: 44,
+    properties: 910,
+    createdOn: "2024-04-18",
+    lastActive: "2025-08-29 14:32",
+    dbSizeGb: 16.4,
+    mrr: 2600,
+  },
+  {
+    id: "t-011",
+    name: "Oakridge Realty Partners",
+    admin: "Hannah Singh",
+    plan: "Basic",
+    status: "Active",
+    users: 29,
+    properties: 710,
+    createdOn: "2023-06-09",
+    lastActive: "2025-11-11 17:15",
+    dbSizeGb: 9.4,
+    mrr: 960,
+  },
+  {
+    id: "t-012",
+    name: "GoldenGate Estates",
+    admin: "Marco Alvarez",
+    plan: "Enterprise",
+    status: "Active",
+    users: 620,
+    properties: 18350,
+    createdOn: "2021-12-25",
+    lastActive: "2025-11-13 13:05",
+    dbSizeGb: 260.9,
+    mrr: 22100,
+  },
+  {
+    id: "t-013",
+    name: "HorizonLine Realty",
+    admin: "Priya Iyer",
+    plan: "Pro",
+    status: "Suspended",
+    users: 77,
+    properties: 1800,
+    createdOn: "2024-05-02",
+    lastActive: "2025-10-21 10:50",
+    dbSizeGb: 22.6,
+    mrr: 3300,
+  },
+  {
+    id: "t-014",
+    name: "Lighthouse Property Group",
+    admin: "Chris Bennett",
+    plan: "Basic",
+    status: "Active",
+    users: 18,
+    properties: 540,
+    createdOn: "2023-02-11",
+    lastActive: "2025-11-12 16:04",
+    dbSizeGb: 7.1,
+    mrr: 850,
+  },
+  {
+    id: "t-015",
+    name: "Stonebrook Realty Co.",
+    admin: "Jia Chen",
+    plan: "Pro",
+    status: "Active",
+    users: 130,
+    properties: 3400,
+    createdOn: "2024-01-08",
+    lastActive: "2025-11-13 10:02",
+    dbSizeGb: 49.2,
+    mrr: 4800,
+  },
+];
+
+
+// ========== INVOICES DATA ==========
+export const invoices = [
+  {
+    id: "INV-22145",
+    tenant: "Skyline Realty Pvt Ltd",
+    amount: 4600,
+    status: "Paid",
+    issued: "2025-11-01",
+    due: "2025-11-07",
+    method: "Card",
+  },
+  {
+    id: "INV-22146",
+    tenant: "UrbanNest Realty",
+    amount: 9100,
+    status: "Overdue",
+    issued: "2025-10-01",
+    due: "2025-10-07",
+    method: "Bank",
+  },
+  {
+    id: "INV-22147",
+    tenant: "GreenLeaf Estates",
+    amount: 1199,
+    status: "Paid",
+    issued: "2025-11-01",
+    due: "2025-11-07",
+    method: "UPI",
+  },
+  {
+    id: "INV-22148",
+    tenant: "Harbor & Hills LLP",
+    amount: 799,
+    status: "Due",
+    issued: "2025-11-05",
+    due: "2025-11-12",
+    method: "Card",
+  },
+];
+
+// ========== TICKETS DATA ==========
+export const tickets = [
+  {
+    id: "#TK-1031",
+    tenant: "Skyline Realty Pvt Ltd",
+    subject: "Data import stuck at 85%",
+    priority: "High",
+    status: "Open",
+    created: "2025-11-12 10:10",
+    sla: "4h",
+    assignee: "R. Mehta",
+  },
+  {
+    id: "#TK-1032",
+    tenant: "UrbanNest Realty",
+    subject: "Webhook 500 errors",
+    priority: "Critical",
+    status: "In Progress",
+    created: "2025-11-13 08:05",
+    sla: "1h",
+    assignee: "S. Banerjee",
+  },
+  {
+    id: "#TK-1033",
+    tenant: "GreenLeaf Estates",
+    subject: "Cannot export PDF of invoices",
+    priority: "Medium",
+    status: "Open",
+    created: "2025-11-11 16:42",
+    sla: "24h",
+    assignee: "—",
+  },
+];
+
+// ========== LOGS DATA ==========
+export const logs = Array.from({ length: 14 }).map((_, i) => ({
+  ts: `2025-11-13 0${Math.floor(i / 2)}:${(i % 2) * 30}${i % 2 === 0 ? '0' : ''}`,
+  level: ["INFO", "WARN", "ERROR"][i % 3],
+  source: ["api", "worker", "db"][i % 3],
+  message:
+    i % 3 === 2
+      ? "Background job failed: reconciliation batch #451"
+      : i % 3 === 1
+      ? "High latency detected in region ap-south-1"
+      : "Scheduled job executed: nightly ETL",
+}));
+
+// ========== REGIONAL USAGE DATA ==========
+export const regionalUsage = [
+  { region: "APAC", value: 46 },
+  { region: "EMEA", value: 31 },
+  { region: "Americas", value: 23 },
+];
+
+// ========== REVENUE BY PLAN DATA ==========
+export const revenueByPlan = [
+  { plan: "Free", rev: 0 },
+  { plan: "Basic", rev: 3998 },
+  { plan: "Pro", rev: 16600 },
+];
+
+// ========== CHURN & RETENTION DATA ==========
+export const churnRetention = [
+  { m: "Aug", churn: 1.1, ret: 98.9 },
+  { m: "Sep", churn: 0.9, ret: 99.1 },
+  { m: "Oct", churn: 1.2, ret: 98.8 },
+  { m: "Nov", churn: 0.8, ret: 99.2 },
+];
+
+// ========== CHART COLORS ==========
+export const COLORS = ["#6366F1", "#10B981", "#F59E0B", "#EF4444", "#06B6D4", "#8B5CF6"];
