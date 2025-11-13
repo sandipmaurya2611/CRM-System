@@ -26,7 +26,7 @@ import {
 const Sidebar = ({ 
   className = '', 
   isMinimized = false, 
-  onToggleMinimize = () => {} 
+  onToggleMinimize = () => {}
 }) => {
   const [isSellerOpen, setIsSellerOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -34,7 +34,7 @@ const Sidebar = ({
   
   // User data - in a real app, this would come from a context or props
   const userData = {
-    name: 'John Doe',
+    name: 'Shobhit',
     role: 'Admin',
     email: 'john@example.com'
   };
@@ -42,7 +42,7 @@ const Sidebar = ({
   // Check if any seller route is active
   const isSellerActive = location.pathname.startsWith('/seller');
   const colors = {
-    sidebarBg: '#202444',
+    sidebarBg: '#000000',
     textWhite: '#ffffff',
     sectionHeader: '#9ca3af',
     activeBg: '#ffffff',
@@ -161,15 +161,17 @@ const Sidebar = ({
     );
   };
 
+  const toggleSidebar = () => {
+    onToggleMinimize();
+  };
+
   return (
     <aside 
       className={`fixed top-0 left-0 h-full flex flex-col transition-all duration-300 p-4 z-40 ${className}`}
       style={{ 
         backgroundColor: colors.sidebarBg,
         width: isMinimized ? '70px' : '240px',
-        transitionProperty: 'width, transform',
-        transitionDuration: '300ms',
-        transitionTimingFunction: 'ease-in-out'
+        transition: 'width 0.3s ease-in-out'
       }}
     >
       <div className="mb-6 flex items-center justify-between">
@@ -186,25 +188,32 @@ const Sidebar = ({
             </Link>
           ) : (
             <button 
-              onClick={() => onToggleMinimize()}
+              onClick={toggleSidebar}
               className="p-2 -ml-2"
-              title="Expand menu"
+              title={isMinimized ? 'Expand menu' : 'Collapse menu'}
             >
-              <FaBars 
-                className="text-2xl" 
-                style={{ color: colors.textWhite }}
-              />
+              {isMinimized ? (
+                <FaBars 
+                  className="text-2xl" 
+                  style={{ color: colors.textWhite }}
+                />
+              ) : (
+                <FaTimes 
+                  className="text-2xl" 
+                  style={{ color: colors.textWhite }}
+                />
+              )}
             </button>
           )}
         </div>
         
         {!isMinimized && (
           <button
-            onClick={() => onToggleMinimize()}
+            onClick={toggleSidebar}
             className="p-2 rounded-lg hover:bg-white/10 transition-colors duration-200 text-white flex-shrink-0"
-            title="Minimize"
+            title={isMinimized ? 'Expand' : 'Minimize'}
           >
-            <FaTimes size={20} />
+            {isMinimized ? <FaBars size={20} /> : <FaTimes size={20} />}
           </button>
         )}
       </div>
@@ -236,7 +245,7 @@ const Sidebar = ({
             } ${isMinimized ? 'justify-center' : ''}`}
           >
             <div className={`flex items-center ${!isMinimized ? 'w-full' : ''}`}>
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <div className="w-8 h-8 bg-gradient-to-br from-red-400 to-red-400 rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-sm font-bold text-white">
                   {userData.name.charAt(0)}
                 </span>
@@ -271,7 +280,7 @@ const Sidebar = ({
             <div className="absolute bottom-full left-0 right-0 mb-2 bg-white rounded-lg shadow-lg overflow-hidden z-50">
               <div className="p-4 border-b border-gray-100">
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-gradient-to-br from-red-400 to-red-400 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-sm font-bold text-white">
                       {userData.name.charAt(0)}
                     </span>
