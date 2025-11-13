@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-// import API from "../../services/api"; // Uncomment when backend ready
+import Pagination from "../../components/common/Pagination"
+import FilterSearchBar from "../../components/common/FilterSearchBar"
 
-const Customers = () => {
+const Customers= () => {
   const navigate = useNavigate();
 
   const [customers, setCustomers] = useState([]);

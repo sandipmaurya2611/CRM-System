@@ -24,11 +24,6 @@ import {
   Line,
   BarChart,
   Bar,
-  // XAxis,
-  // YAxis,
-  // CartesianGrid,
-  // Tooltip,
-  // ResponsiveContainer,
 } from "recharts";
 import { Card, KPI, Badge, Table } from "../../../components/common/UIComponents";
 import { kpiData, revenueTrend, planMix, logs, COLORS,tenants, invoices, revenueByPlan, churnRetention } from "../../../../public/data/mockData";
@@ -44,14 +39,11 @@ export default function OverviewTab() {
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
         <KPI icon={Building2} label="Organizations" value={kpiData.orgs.toLocaleString()} trend={8} />
         <KPI icon={Users} label="Total Users" value={kpiData.users.toLocaleString()} trend={5} />
-        {/* <KPI icon={DollarSign} label="MRR" value={`$${kpiData.mrr.toLocaleString()}`} note="USD" trend={3} /> */}
-        {/* <KPI icon={Activity} label="Active Sessions" value={kpiData.activeSessions.toLocaleString()} trend={12} /> */}
         <KPI icon={DollarSign} label="MRR (platform)" value={`$${totals.mrr.toLocaleString()}`} trend={3} />
         <KPI icon={TrendingUp} label="ARR (projected)" value={`$${totals.ar.toLocaleString()}`} trend={3} />
-        {/* <KPI icon={CreditCard} label="Overdue" value={`$${totals.overdue.toLocaleString()}`} trend={-2} /> */}
       </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
