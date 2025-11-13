@@ -12,7 +12,7 @@ import {
 } from "recharts";
 import { DollarSign, TrendingUp, CreditCard, BookOpen } from "lucide-react";
 import { Card, KPI, Badge, Table } from "../../../components/common/UIComponents";
-import { tenants, invoices, revenueByPlan, churnRetention } from "../data/mockData";
+import { tenants, invoices, revenueByPlan, churnRetention } from "../../../../public/data/mockData";
 
 export default function BillingTab() {
   const totals = useMemo(() => {

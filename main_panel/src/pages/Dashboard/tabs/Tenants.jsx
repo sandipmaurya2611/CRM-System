@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { Search, Filter, Download } from "lucide-react";
 import { Badge, Table } from "../../../components/common/UIComponents";
-import { tenants } from "../data/mockData";
+import { tenants } from "../../../../public/data/mockData";
 
 export default function TenantsTab() {
   const [query, setQuery] = useState("");

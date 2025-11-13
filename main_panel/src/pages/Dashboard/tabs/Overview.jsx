@@ -20,7 +20,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { Card, KPI, Badge, Table } from "../../../components/common/UIComponents";
-import { kpiData, revenueTrend, planMix, logs, COLORS } from "../data/mockData";
+import { kpiData, revenueTrend, planMix, logs, COLORS } from "../../../../public/data/mockData";
 
 export default function OverviewTab() {
   return (
