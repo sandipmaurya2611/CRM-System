@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Free",
+    "priceMonthly": 0,
+    "priceYearly": 0,
+    "description": "Perfect for getting started.",
+    "features": [
+      "1 User",
+      "Basic Features",
+      "Limited Support"
+    ]
+  },
+  {
+    "name": "Basic",
+    "priceMonthly": 199,
+    "priceYearly": 1910,
+    "description": "Good for individuals or small teams.",
+    "features": [
+      "Jio Tag",
+      "3 Users",
+      "Basic CRM Tools",
+      "Notes & Reminders"
+    ]
+  },
+  {
+    "name": "Pro",
+    "priceMonthly": 499,
+    "priceYearly": 4790,
+    "description": "Perfect for small businesses.",
+    "features": [
+      "Jio Tag + Visit",
+      "10 Users",
+      "Lead Management",
+      "Task Automation",
+      "Reports Dashboard"
+    ]
+  },
+  {
+    "name": "Elite",
+    "priceMonthly": 999,
+    "priceYearly": 9590,
+    "description": "Full access with all features.",
+    "features": [
+      "Jio Tag",
+      "Visit",
+      "Calling",
+      "All Pro Features",
+      "50 Users",
+      "All Pro Features",
+      "API Access"
+    ]
+  },
+  {
+    "name": "Custom",
+    "priceMonthly": null,
+    "priceYearly": null,
+    "description": "Tailored solution for your needs.",
+    "features": [
+      "Jio Tag",
+      "Visit",
+      "Calling",
+      "Unlimited User",
+      "Priority Support"
+    ]
+  }
+]
