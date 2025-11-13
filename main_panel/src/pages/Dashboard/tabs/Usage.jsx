@@ -13,7 +13,7 @@ import {
   Area,
 } from "recharts";
 import { Card, Badge } from "../../../components/common/UIComponents";
-import { usageTrend, regionalUsage } from "../data/mockData";
+import { usageTrend, regionalUsage } from "../../../../public/data/mockData";
 
 export default function UsageTab() {
   return (

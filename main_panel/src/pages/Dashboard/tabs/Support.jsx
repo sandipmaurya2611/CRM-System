@@ -1,7 +1,7 @@
 import React from "react";
 import { LifeBuoy, Clock, Shield } from "lucide-react";
 import { Card, KPI, Badge, Table } from "../../../components/common/UIComponents";
-import { tickets } from "../data/mockData";
+import { tickets } from "../../../../public/data/mockData";
 
 export default function SupportTab() {
   return (
