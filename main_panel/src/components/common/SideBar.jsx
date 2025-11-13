@@ -17,6 +17,7 @@ import {
   FaFileContract,
   FaCheckCircle,
   FaRegCreditCard,
+  FaCreditCard,
   FaEnvelope,
   FaSignOutAlt,
   FaBell
@@ -72,7 +73,7 @@ const Sidebar = ({
       href: '/product-verify'
     },
     { icon: <FaRegCreditCard size={20} />, label: 'Subscription', href: '/subscription' },
-    { icon: <FaEnvelope size={20} />, label: 'Enquiry', href: '/inquiry' },
+    { icon: <FaCreditCard size={20} />, label: 'Payments', href: '/payments' },
     { icon: <FaBell size={20} />, label: 'Notifications', href: '/Notifications' },
   ];
 

@@ -18,8 +18,8 @@ import {
   FaSpinner
 } from 'react-icons/fa';
 import { MdBusinessCenter } from 'react-icons/md';
-import api from '../services/api';
-import './AddCustomer.css';
+
+
 
 // Validation Schema
 const customerSchema = yup.object().shape({
