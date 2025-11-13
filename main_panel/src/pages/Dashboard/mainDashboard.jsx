@@ -23,7 +23,7 @@ const tabs = [
   // { id: "logs", label: "Logs", icon: BookOpen },
 ];
 
-export default function SuperAdminDashboard() {
+const SuperAdminDashboard = () => {
   const [active, setActive] = useState("overview");
 
   return (
@@ -49,11 +49,9 @@ export default function SuperAdminDashboard() {
         {/* Tab Pages */}
         {active === "overview" && <OverviewTab />}
         {active === "tenants" && <TenantsTab />}
-        {active === "usage" && <UsageTab />}
-        {active === "billing" && <BillingTab />}
-        {active === "support" && <SupportTab />}
-        {/* {active === "logs" && <LogsTab />} */}
       </main>
     </div>
   );
-}
+};
+
+export default SuperAdminDashboard;
