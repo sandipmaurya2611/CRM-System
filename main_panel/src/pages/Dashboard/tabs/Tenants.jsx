@@ -37,7 +37,7 @@ export default function TenantsTab() {
           </button>
         </div>
       </div>
-
+<div className="flex-1 min-h-0"> 
       <Table
         keyField="id"
         columns={[
@@ -46,11 +46,10 @@ export default function TenantsTab() {
           { key: "plan", label: "Plan" },
           { key: "status", label: "Status" },
           { key: "users", label: "Users" },
-          { key: "properties", label: "Properties" },
+
           { key: "dbSizeGb", label: "DB Size" },
           { key: "mrr", label: "MRR" },
           { key: "createdOn", label: "Created" },
-          { key: "lastActive", label: "Last Active" },
         ]}
         data={filtered}
         renderCell={(c, row) => {
@@ -72,6 +71,7 @@ export default function TenantsTab() {
           }
         }}
       />
+      </div>
     </div>
   );
 }
